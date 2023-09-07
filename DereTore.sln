@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{9203B750-3E22-4048-A379-2147B3C9C7BF}"
 	ProjectSection(SolutionItems) = preProject
@@ -75,6 +75,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DereTore.Interop.PVRTexLib", "Interop\DereTore.Interop.PVRTexLib\DereTore.Interop.PVRTexLib.csproj", "{F452DE5A-1721-4A11-9E8A-31E476165D60}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VGAudio", "external\VGAudio\src\VGAudio\VGAudio.csproj", "{F8E02F5F-5376-4723-A176-7EEC577D5307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DereTore.Apps.AcbMaker.Taiko", "Apps\AcbMaker.Taiko\DereTore.Apps.AcbMaker.Taiko.csproj", "{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,6 +323,18 @@ Global
 		{F8E02F5F-5376-4723-A176-7EEC577D5307}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F8E02F5F-5376-4723-A176-7EEC577D5307}.Release|x64.ActiveCfg = Release|Any CPU
 		{F8E02F5F-5376-4723-A176-7EEC577D5307}.Release|x86.ActiveCfg = Release|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Debug|x64.Build.0 = Debug|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Release|x64.ActiveCfg = Release|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Release|x64.Build.0 = Release|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -348,6 +362,7 @@ Global
 		{0C5CC89A-0B30-4846-A37A-90D217D61EF1} = {4DD45BEA-1576-4ABE-9D27-8D517702533D}
 		{F452DE5A-1721-4A11-9E8A-31E476165D60} = {4DD45BEA-1576-4ABE-9D27-8D517702533D}
 		{F8E02F5F-5376-4723-A176-7EEC577D5307} = {F815AF74-5C82-416E-85C5-2C79C01521AA}
+		{F672BE4A-3E3B-4E13-B1C7-23153301D8F3} = {73543281-7546-49F0-AD31-DF837F0FDED5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BF04279-EB9E-4F92-99A2-FE29F4D1D9FA}

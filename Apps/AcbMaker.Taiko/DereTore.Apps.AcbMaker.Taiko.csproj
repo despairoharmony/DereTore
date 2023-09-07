@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F672BE4A-3E3B-4E13-B1C7-23153301D8F3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DereTore.Apps.AcbMaker.Taiko</RootNamespace>
+    <AssemblyName>DereTore.Apps.AcbMaker.Taiko</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VGAudio, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\VGAudio.2.2.1\lib\net45\VGAudio.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Taiko\AcfReferenceTable.cs" />
+    <Compile Include="Taiko\CommandTable.cs" />
+    <Compile Include="Taiko\CueNameTable.cs" />
+    <Compile Include="Taiko\CueTable.cs" />
+    <Compile Include="Taiko\HeaderTable.cs" />
+    <Compile Include="Taiko\SequenceTable.cs" />
+    <Compile Include="Taiko\SynthTable.cs" />
+    <Compile Include="Taiko\TrackTable.cs" />
+    <Compile Include="Taiko\WaveformTable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\DereTore.Common.StarlightStage\DereTore.Common.StarlightStage.csproj">
+      <Project>{abd7f1b5-c4e3-4200-8e44-98b183dfee2c}</Project>
+      <Name>DereTore.Common.StarlightStage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\DereTore.Common\DereTore.Common.csproj">
+      <Project>{dbd0da4a-0057-4d04-ad69-0e7267d72793}</Project>
+      <Name>DereTore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\DereTore.Compression.LZ4\DereTore.Compression.LZ4.csproj">
+      <Project>{bea07a30-c611-4d1c-9632-6cc103722baa}</Project>
+      <Name>DereTore.Compression.LZ4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Exchange\DereTore.Exchange.Archive.ACB\DereTore.Exchange.Archive.ACB.csproj">
+      <Project>{eecf4baa-9c9e-4687-a616-0f5c65c5f14b}</Project>
+      <Name>DereTore.Exchange.Archive.ACB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Exchange\DereTore.Exchange.Audio.HCA\DereTore.Exchange.Audio.HCA.csproj">
+      <Project>{7c6fadd7-a0bb-4bf3-8992-3d89ace1cc69}</Project>
+      <Name>DereTore.Exchange.Audio.HCA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Exchange\DereTore.Exchange.UnityEngine\DereTore.Exchange.UnityEngine.csproj">
+      <Project>{d0d328e6-2d3d-4b55-9cec-88552cd332eb}</Project>
+      <Name>DereTore.Exchange.UnityEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
